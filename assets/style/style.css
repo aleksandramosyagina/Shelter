@@ -1,3 +1,35 @@
+body {
+    font-family: Arial, Georgia, sans-serif;
+    color: #545454;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav__menu {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__menu_active {
+    text-decoration: underline;
+    text-decoration-color: #f1cdb3;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.2rem;
+}
+
+.nav__menu_container {
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+}
+
 .main__banner {
     background-image: url("../img/start-screen-gradient-background.jpg");
     background-size: 100%;
@@ -7,7 +39,7 @@
 }
 
 .main__img_puppy {
-    height: 80vh;
+    height: 80%;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -22,10 +54,17 @@
 
 .main__banner_title {
     color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .main__banner_text {
     color: #f6f6f6;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    margin-bottom: 1.7em;
 }
 
 .main__banner_button {
@@ -44,6 +83,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #545454;
+}
+
+.main__about_text {
+    font-size: 0.9rem;
+    line-height: 1.5em;
 }
 
 .main__img_pets {
@@ -94,6 +145,9 @@ width: 100vw;
     border-radius: 30px;
     width: 70%;
     height: 8vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #292929;
+    font-size: 0.9rem;
 }
 
 .main__friends_arrow {
@@ -111,13 +165,17 @@ height: 45px;
     width: 20%;
     height: 8vh;
     margin: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #292929;
+    font-size: 0.9rem;
+
 }
 .main__help {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 70vh;
+    min-height: 80vh;
 }
 .main__help_container {
     display: flex;
@@ -152,29 +210,85 @@ height: 45px;
     margin: 7%;
 }
 
+.main__donation_bank-info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+}
 .main__donation_info {
     width: 30vw;
 }
 
+.main__donation_text {
+    font-style: italic;
+    color: #b2b2b2;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
 .main__donation_button {
     background-color: #f1cdb3;
     border: none;
     border-radius: 7px;
-    height: 6vh;
-    margin: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #545454;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0.7em 0.7em;
+}
+
+.main__donation_button_img {
+    margin-right: 1em;
 }
 
 .footer {
     background-image: url("../img/footer-gradient-background.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 40vh;
     position: relative;
 }
 
 .footer__img {
-    height: 40vh;
+    height: 80%;
     position: absolute;
     left: 70%;
     bottom: 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: flex-end;
+    color:#f1cdb3;
+}
+
+.footer__contacts {
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+
+.footer__title {
+    color: #ffffff;
+}
+.footer__address {
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+.footer__icon {
+    width: 1.7em;
+    margin-right: 1rem;
+}
+
+.footer__icon_marker {
+    width: 1em;
+    margin-right: 1rem;
 }
