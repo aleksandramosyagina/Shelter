@@ -1,0 +1,180 @@
+.main__banner {
+    background-image: url("../img/start-screen-gradient-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main__img_puppy {
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main__banner_info {
+    width: 35vw;
+    margin-left: 5%;
+    position: absolute;
+    top: 35%;
+}
+
+.main__banner_title {
+    color: #ffffff;
+}
+
+.main__banner_text {
+    color: #f6f6f6;
+}
+
+.main__banner_button {
+    background-color: #f1cdb3;
+    color: #292929;
+    border-radius: 100px;
+    border: none;
+    width: 17vw;
+    height: 7vh;
+}
+
+.main__about {
+    min-height: 70vh;
+    position: relative;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__img_pets {
+    height: 50vh;
+    margin-right: 7%;
+}
+
+.main__about_info {
+    color: #4c4c4c;
+    width: 30vw;
+}
+
+.main__friends {
+    min-height: 90vh;
+    background-color: #f6f6f6;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__friends_container {
+    display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100vw;
+}
+
+.main__friends_title {
+    text-align: center;
+    margin: 5%;
+}
+
+.main__friends_card {
+    min-height: 30vh;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__friends_card_button {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: #fafafa;
+    border: 1px solid #f1cdb3;
+    border-radius: 30px;
+    width: 70%;
+    height: 8vh;
+}
+
+.main__friends_arrow {
+background-color: #f6f6f6;
+border: 1px solid #f1cdb3;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+}
+
+.main__friends_button {
+    background-color: #f1cdb3;
+    border: none;
+    border-radius: 30px;
+    width: 20%;
+    height: 8vh;
+    margin: 5%;
+}
+.main__help {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+}
+.main__help_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90vw;
+    min-height: 45vh;
+}
+
+.main__help_title {
+    text-align: center;
+}
+.main__help_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20%;
+}
+
+.main__donation {
+    min-height: 50vh;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__donation_img {
+    width: 35vw;
+    margin-right: 7%;
+    margin: 7%;
+}
+
+.main__donation_info {
+    width: 30vw;
+}
+
+.main__donation_button {
+    background-color: #f1cdb3;
+    border: none;
+    border-radius: 7px;
+    height: 6vh;
+    margin: 5%;
+}
+
+.footer {
+    background-image: url("../img/footer-gradient-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    position: relative;
+}
+
+.footer__img {
+    height: 40vh;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+}
