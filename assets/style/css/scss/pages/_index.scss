@@ -1,0 +1,205 @@
+body {
+    font-family: $main-font;
+    color: $color-dark-l;
+}
+
+.main__banner {
+    background-image: url("../../../img/start-screen-gradient-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main__img_puppy {
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main__banner_info {
+    width: 35vw;
+    margin-left: 5%;
+    position: absolute;
+    top: 35%;
+}
+
+.main__banner_title {
+    color: $color-light-xl;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.main__banner_text {
+    color: $color-light-l;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    margin-bottom: 1.7em;
+}
+
+.main__banner_button {
+    background-color: $color-primary;
+    color: $color-dark-3xl;
+    border-radius: 100px;
+    border: none;
+    width: 17vw;
+    height: 7vh;
+}
+
+.main__about {
+    min-height: 70vh;
+    position: relative;
+    color:$color-light-xl;
+    @include flex();
+}
+
+.main__title {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $color-dark-l;
+}
+
+.main__about_text {
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+.main__img_pets {
+    height: 50vh;
+    margin-right: 7%;
+}
+
+.main__about_info {
+    color: $color-dark-xl;
+    width: 30vw;
+}
+
+.main__friends {
+    min-height: 90vh;
+    background-color: $color-light-l;
+    width: 100vw;
+    @include flex();
+    flex-direction: column;
+}
+
+.main__friends_container {
+    display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100vw;
+}
+
+.main__friends_title {
+    text-align: center;
+    margin: 5%;
+}
+
+.main__friends_card {
+    min-height: 30vh;
+    background-color: $color-light-s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.3% 0.3%;
+}
+
+.main__friends_card_button {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: $color-light-s;
+    border: 1px solid $color-primary;
+    border-radius: 30px;
+    width: 70%;
+    height: 8vh;
+    font-family: $title-font;
+    color: $color-dark-3xl;
+    font-size: 0.9rem;
+}
+
+.main__friends_arrow {
+background-color: $color-light-l;
+border: 1px solid $color-primary;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+}
+
+.main__friends_button {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 30px;
+    width: 20%;
+    height: 8vh;
+    margin: 5%;
+    font-family: $title-font;
+    color: $color-dark-3xl;
+    font-size: 0.9rem;
+
+}
+.main__help {
+    @include flex();
+    flex-direction: column;
+    min-height: 80vh;
+}
+.main__help_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90vw;
+    min-height: 45vh;
+}
+
+.main__help_title {
+    text-align: center;
+}
+.main__help_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20%;
+}
+
+.main__donation {
+    min-height: 50vh;
+    background-color: $color-light-l;
+    @include flex();
+}
+
+.main__donation_img {
+    width: 35vw;
+    margin-right: 7%;
+    margin: 7%;
+}
+
+.main__donation_bank-info {
+    font-family: $title-font;
+    font-size: 0.9rem;
+}
+.main__donation_info {
+    width: 30vw;
+}
+
+.main__donation_text {
+    font-style: italic;
+    color: $color-dark-m;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+.main__donation_button {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7em 0.7em;
+    font-family: $title-font;
+    color: $color-dark-l;
+    @include flex();
+}
+
+.main__donation_button_img {
+    margin-right: 1em;
+}

@@ -1,0 +1,379 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 5%;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.nav .nav__menu {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav .nav__menu .nav__menu_active {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f1cdb3;
+          text-decoration-color: #f1cdb3;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+}
+.nav .nav__menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer {
+  background-image: url("../../../img/footer-gradient-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40vh;
+  position: relative;
+}
+.footer .footer__img {
+  height: 80%;
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+}
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #f1cdb3;
+}
+.footer .footer__container .footer__contacts {
+  width: 25vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 5%;
+  vertical-align: middle;
+}
+.footer .footer__container .footer__contacts .footer__title {
+  color: #ffffff;
+}
+.footer .footer__container .footer__address {
+  width: 25vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 5%;
+}
+.footer .footer__container .footer__address .footer__icon {
+  width: 1.7em;
+  margin-right: 1rem;
+}
+.footer .footer__container .footer__address .footer__icon_marker {
+  width: 1em;
+  margin-right: 1rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #545454;
+}
+
+.main__banner {
+  background-image: url("../../../img/start-screen-gradient-background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main__img_puppy {
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.main__banner_info {
+  width: 35vw;
+  margin-left: 5%;
+  position: absolute;
+  top: 35%;
+}
+
+.main__banner_title {
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.main__banner_text {
+  color: #f6f6f6;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  margin-bottom: 1.7em;
+}
+
+.main__banner_button {
+  background-color: #f1cdb3;
+  color: #292929;
+  border-radius: 100px;
+  border: none;
+  width: 17vw;
+  height: 7vh;
+}
+
+.main__about {
+  min-height: 70vh;
+  position: relative;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #545454;
+}
+
+.main__about_text {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+
+.main__img_pets {
+  height: 50vh;
+  margin-right: 7%;
+}
+
+.main__about_info {
+  color: #4c4c4c;
+  width: 30vw;
+}
+
+.main__friends {
+  min-height: 90vh;
+  background-color: #f6f6f6;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__friends_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.main__friends_title {
+  text-align: center;
+  margin: 5%;
+}
+
+.main__friends_card {
+  min-height: 30vh;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.3% 0.3%;
+}
+
+.main__friends_card_button {
+  margin-bottom: 10%;
+  margin-top: 5%;
+  background-color: #fafafa;
+  border: 1px solid #f1cdb3;
+  border-radius: 30px;
+  width: 70%;
+  height: 8vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #292929;
+  font-size: 0.9rem;
+}
+
+.main__friends_arrow {
+  background-color: #f6f6f6;
+  border: 1px solid #f1cdb3;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.main__friends_button {
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 30px;
+  width: 20%;
+  height: 8vh;
+  margin: 5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #292929;
+  font-size: 0.9rem;
+}
+
+.main__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 80vh;
+}
+
+.main__help_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90vw;
+  min-height: 45vh;
+}
+
+.main__help_title {
+  text-align: center;
+}
+
+.main__help_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 20%;
+}
+
+.main__donation {
+  min-height: 50vh;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__donation_img {
+  width: 35vw;
+  margin-right: 7%;
+  margin: 7%;
+}
+
+.main__donation_bank-info {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+}
+
+.main__donation_info {
+  width: 30vw;
+}
+
+.main__donation_text {
+  font-style: italic;
+  color: #b2b2b2;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.main__donation_button {
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 7px;
+  padding: 0.7em 0.7em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #545454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__donation_button_img {
+  margin-right: 1em;
+}

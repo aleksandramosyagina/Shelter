@@ -1,0 +1,59 @@
+.footer {
+    background-image: url("../../../img/footer-gradient-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    position: relative;
+
+    .footer__img {
+        height: 80%;
+        position: absolute;
+        left: 70%;
+        bottom: 0;
+    }
+
+    .footer__container {
+        display: flex;
+        align-items: flex-end;
+        color:$color-primary;
+
+        .footer__contacts {
+            width: 25vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 5%;
+            vertical-align: middle;
+    
+            .footer__title {
+                color: $color-light-xl;
+            }
+        }
+
+        .footer__address {
+            width: 25vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 5%;
+
+            .footer__icon {
+                width: 1.7em;
+                margin-right: 1rem;
+            }
+            
+            .footer__icon_marker {
+                width: 1em;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+

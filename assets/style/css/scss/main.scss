@@ -1,0 +1,12 @@
+@import 'normalize.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+
+//Elements
+@import 'elements/header.scss';
+@import 'elements/footer.scss';
+
+//Pages
+@import 'pages/index.scss';
+@import 'pages/pets.scss';

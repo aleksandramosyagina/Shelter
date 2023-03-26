@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: Arial, Georgia, sans-serif;
     color: #545454;
-}
+} */
 
-.nav {
+/* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,9 +28,9 @@ body {
     display: flex;
     width: 40vw;
     justify-content: space-between;
-}
+} */
 
-.main__banner {
+/* .main__banner {
     background-image: url("../img/start-screen-gradient-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -239,9 +239,9 @@ height: 45px;
 
 .main__donation_button_img {
     margin-right: 1em;
-}
+} */
 
-.footer {
+/* .footer {
     background-image: url("../img/footer-gradient-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,7 +293,7 @@ height: 45px;
     width: 1em;
     margin-right: 1rem;
 }
-
+ */
 
 /* страница pet */
 .main__section_pets{
