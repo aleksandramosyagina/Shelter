@@ -1,4 +1,4 @@
-.main__section_pets{
+.main__section_pets {
     min-height: 180%;
     background-color: $color-light-l;
     @include flex();
@@ -7,6 +7,8 @@
 
 .main__pets_title {
     text-align: center;
+    line-height: 1.3em;
+    margin-top: 2.5em;
 }
 
 .main__friends_container_pets {
@@ -17,8 +19,9 @@
 }
 
 .main__buttons_container {
-    margin: 4% auto 5%; 
+    margin: 4% auto 5%;
 }
+
 .main__buttons_number {
     background-color: $color-primary;
 }
