@@ -1,0 +1,28 @@
+.main__section_pets{
+    min-height: 180%;
+    background-color: $color-light-l;
+    @include flex();
+    flex-direction: column;
+}
+
+.main__pets_title {
+    text-align: center;
+}
+
+.main__friends_container_pets {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 150%;
+}
+
+.main__buttons_container {
+    margin: 4% auto 5%; 
+}
+.main__buttons_number {
+    background-color: $color-primary;
+}
+
+.main__buttons_arrow {
+    border: 1px solid $color-dark-s;
+}

@@ -9,13 +9,18 @@
     .nav__menu {
         color: $color-light-xl;
         text-decoration: none;
+    }
 
-        .nav__menu_active {
-            text-decoration: underline;
-            text-decoration-color: $color-primary;
-            text-underline-offset: 0.5rem;
-            text-decoration-thickness: 0.2rem;
-        }
+    .nav__menu_dark {
+        color: $color-dark-l;
+        text-decoration: none;
+    }
+
+    .nav__menu_active {
+        text-decoration: underline;
+        text-decoration-color: $color-primary;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.2rem;
     }
 
     .nav__menu_container {

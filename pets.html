@@ -5,11 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/css/scss/main.css">
     <title>Our pets</title>
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <object type="image/svg+xml" data="assets/img/Logo_dark.svg" class="nav_img">
+                    <img src="assets/img/Logo_dark.png" alt="logo">
+                </object>
+            </div>
+            <div class="nav__menu_container">
+                <a class="nav__menu_dark" href="#about">About the shelter</a>
+                <a class="nav__menu_dark nav__menu_active" href="#pets">Our pets</a>
+                <a class="nav__menu_dark" href="#help">Help the shelter</a>
+                <a class="nav__menu_dark" href="#contacts">Contacts</a>
+            </div>
+        </nav>
+    </header>
     <main class="main__pets">
     <section class="main__section_pets">
         <h2 class="main__title main__pets_title">Our friends who<br>are looking for the house</h2>
@@ -65,5 +79,24 @@
         </div>
     </section>
 </main>
+<footer class="footer" id="contacts">
+    <div class="footer__container">
+        <div class="footer__contacts">
+            <h2 class="footer__title">For questions <br>and suggestions</h2>
+            <div class="footer__contacts_email"><img src="assets/img/icon-email.svg" class="footer__icon"
+                    alt="icon">email@shelter.com</div>
+            <div class="footer__contacts_phone"><img src="assets/img/icon-phone.svg" class="footer__icon"
+                    alt="icon">+13 674 567 75 54</div>
+        </div>
+        <div class="footer__address">
+            <h2 class="footer__title">We are waiting <br>for your visit</h2>
+            <div class="footer__address_email"><img src="assets/img/icon-marker.svg" class="footer__icon_marker"
+                    alt="icon">1 Central Street, Boston <br>(entrance from the store)</div>
+            <div class="footer__address_phone"><img src="assets/img/icon-marker.svg" class="footer__icon_marker"
+                    alt="icon">18 South Park, London </div>
+        </div>
+    </div>
+    <img src="assets/img/footer-puppy.png" class="footer__img" alt="puppy">
+</footer>
 </body>
 </html>

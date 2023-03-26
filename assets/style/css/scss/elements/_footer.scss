@@ -25,10 +25,12 @@
             justify-content: space-around;
             margin-left: 5%;
             vertical-align: middle;
-    
-            .footer__title {
-                color: $color-light-xl;
-            }
+        }
+
+        .footer__title {
+            color: $color-light-xl;
+            font-family: $title-font;
+            font-weight: 400;
         }
 
         .footer__address {
@@ -38,16 +40,16 @@
             flex-direction: column;
             justify-content: space-around;
             margin-left: 5%;
-
-            .footer__icon {
-                width: 1.7em;
-                margin-right: 1rem;
-            }
-            
-            .footer__icon_marker {
-                width: 1em;
-                margin-right: 1rem;
-            }
+        }
+        
+        .footer__icon {
+            width: 1.7em;
+            margin-right: 1rem;
+        }
+        
+        .footer__icon_marker {
+            width: 1em;
+            margin-right: 1rem;
         }
     }
 }
