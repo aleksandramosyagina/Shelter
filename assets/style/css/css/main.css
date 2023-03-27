@@ -636,11 +636,15 @@ body {
   height: 45px;
 }
 
+.main__friends_form {
+  width: 15%;
+}
+
 .main__friends_button {
   background-color: #f1cdb3;
   border: none;
   border-radius: 30px;
-  width: 20%;
+  width: 100%;
   height: 8vh;
   margin: 5%;
   font-family: Georgia, "Times New Roman", Times, serif;
