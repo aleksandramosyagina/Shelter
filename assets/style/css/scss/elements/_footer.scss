@@ -58,12 +58,16 @@
 }
 
 @include media-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "footer__title_questions "
         "footer__contact_email" 
-        "footer__contact_address"
-        "footer__title_wait"
         "footer__contact_phone"
+        "footer__title_wait"
+        "footer__contact_address"
         "footer__contact_city";
+        text-align: center;
+        min-height: 630px;
 }
 }
 
@@ -98,6 +102,10 @@
     font-weight: 400;
     letter-spacing: 0.2rem;
     line-height: 1.2em;
+
+    @include media-mobile {
+        font-size: 2.2rem;
+    }
 }
 
 .footer__contact {
@@ -106,6 +114,9 @@
     color: $color-primary;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+    @include media-mobile {
+        font-size: 1.4rem;
+    }
 }
 
 .footer__icon {

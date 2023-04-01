@@ -551,7 +551,13 @@ template {
 }
 @media (max-width: 414px) {
   .footer__container {
-        grid-template-areas: "footer__title_questions " "footer__contact_email" "footer__contact_address" "footer__title_wait" "footer__contact_phone" "footer__contact_city";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[6];
+    grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "footer__title_questions " "footer__contact_email" "footer__contact_phone" "footer__title_wait" "footer__contact_address" "footer__contact_city";
+    text-align: center;
+    min-height: 630px;
   }
 }
 
@@ -605,11 +611,11 @@ template {
     -ms-grid-column: 1;
   }
   .footer__contact_address {
-    -ms-grid-row: 3;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
   }
   .footer__contact_phone {
-    -ms-grid-row: 5;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
   .footer__contact_city {
@@ -626,6 +632,11 @@ template {
   letter-spacing: 0.2rem;
   line-height: 1.2em;
 }
+@media (max-width: 414px) {
+  .footer__title {
+    font-size: 2.2rem;
+  }
+}
 
 .footer__contact {
   display: -webkit-box;
@@ -637,6 +648,11 @@ template {
   color: #f1cdb3;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
+}
+@media (max-width: 414px) {
+  .footer__contact {
+    font-size: 1.4rem;
+  }
 }
 
 .footer__icon {
