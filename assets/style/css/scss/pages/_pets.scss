@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+    }    
+
+.main__section_pets {
+    min-height: 180%;
+    background-color: $color-light-l;
+    @include flex();
+    flex-direction: column;
+}
+
+.main__pets_title {
+    text-align: center;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    margin-top: 2.8em;
+}
+
+.main__friends_container_pets {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 150%;
+    margin-top: 2%;
+    max-width: 1240px;
+}
+
+.main__friends_name {
+    margin-top: 12%;
+    font-size: 1.1em;
+    letter-spacing: 0.07em;
+}
+
+.main__buttons_container {
+    margin: 4% auto 8%;
+}
+
+.main__friends_card_button {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+.main__buttons_number {
+    background-color: $color-primary;
+}
+
+.main__buttons_arrow {
+    border: 1px solid $color-dark-s;
+}
+
+.main__friends_arrow {
+    margin-left: 10px;
+    margin-right: 10px;
+}

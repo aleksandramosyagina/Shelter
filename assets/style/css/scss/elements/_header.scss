@@ -1,0 +1,94 @@
+.header {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    font-weight: 400;
+    height: 60px;
+    max-width: 1280px;
+    font-size: 0.9rem;
+
+    .nav__menu {
+        color: $color-dark-s;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            color: $color-light-s;
+        }
+    }
+
+    .nav__menu_dark {
+        color: $color-dark-l;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            color: $color-dark-xl;
+        }
+    }
+
+    .nav__menu_active {
+        text-decoration: underline;
+        color: $color-light-s;
+        text-decoration-color: $color-primary;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.2rem;
+    }
+    .nav__menu_active_dark {
+        text-decoration: underline;
+        color: $color-dark-xl;
+        text-decoration-color: $color-primary;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.2rem;
+    }
+    .nav__menu_container {
+        display: flex;
+        width: 33vw;
+        justify-content: space-between;
+        margin-right: -2%;
+    }
+
+    .nav__logo {
+        margin-left: -2%;
+    }
+    .nav__logo_title {
+        font-family: $title-font;
+        font-size: 1.8rem;
+        color: $color-primary;
+        line-height: 0.005em;
+        letter-spacing: 0.07em;
+        font-weight: 400;
+    }
+    
+    .nav__logo_subtitle {
+        color: $color-primary-light;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+    }
+
+    .nav__logo_title_dark {
+        font-family: $title-font;
+        font-size: 1.8rem;
+        line-height: 0.005em;
+        letter-spacing: 0.07em;
+        font-weight: 400;
+        color: $color-dark-l;
+    }
+    
+    .nav__logo_subtitle_dark {
+        color: $color-dark-3xl;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+    }
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
