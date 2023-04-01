@@ -341,6 +341,12 @@ template {
   display: none;
 }
 
+.header {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,10 +449,17 @@ a, a:visited {
   position: relative;
 }
 .footer .footer__img {
-  height: 80%;
+  height: 88%;
   position: absolute;
-  left: 70%;
+  left: 72%;
   bottom: 0;
+}
+
+.footer__container_wrap {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 350px;
 }
 
 .footer__container {
@@ -457,9 +470,9 @@ a, a:visited {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
-  width: 60vw;
-  height: 35vh;
-  margin-left: 5%;
+  width: 68vw;
+  height: 36vh;
+  margin-left: 3%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -503,8 +516,9 @@ a, a:visited {
 .footer__title {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.2rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   line-height: 1.2em;
 }
 
@@ -516,8 +530,8 @@ a, a:visited {
       -ms-flex-align: center;
           align-items: center;
   color: #f1cdb3;
-  font-size: 0.9rem;
-  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .footer__icon {
@@ -888,8 +902,19 @@ html {
   max-width: 1240px;
 }
 
+.main__friends_name {
+  margin-top: 12%;
+  font-size: 1.1em;
+  letter-spacing: 0.07em;
+}
+
 .main__buttons_container {
-  margin: 4% auto 5%;
+  margin: 4% auto 8%;
+}
+
+.main__friends_card_button {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .main__buttons_number {
@@ -898,4 +923,9 @@ html {
 
 .main__buttons_arrow {
   border: 1px solid #cdcdcd;
+}
+
+.main__friends_arrow {
+  margin-left: 10px;
+  margin-right: 10px;
 }
