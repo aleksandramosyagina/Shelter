@@ -7,14 +7,20 @@
 
     @include media-tablet {
         min-height: 63vh;
-}
-@include media-mobile {
-    min-height: 162vh;
-}
+    }
+
+    @include media-mobile {
+        min-height: 145vh;
+    }
+
+    @include media-mobilesmall {
+        min-height: 809px;
+    }
+
     .footer__img {
         height: 88%;
         position: absolute;
-        left: 72%;
+        right: 3%;
         bottom: 0;
 
         @include media-laptop {
@@ -25,11 +31,12 @@
         @include media-tablet {
             height: 48%;
             left: 31%;
-    }
-    @include media-mobile {
-        height: 32%;
+        }
+
+        @include media-mobile {
+            height: 32%;
             left: 10%;
-    }
+        }
     }
 }
 
@@ -39,6 +46,7 @@
     margin-right: auto;
     min-height: 350px;
 }
+
 .footer__container {
     display: grid;
     grid-template-areas: "footer__title_questions footer__title_wait"
@@ -55,20 +63,24 @@
     @include media-tablet {
         width: 89vw;
         margin-left: 8%;
-}
+    }
 
-@include media-mobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "footer__title_questions "
-        "footer__contact_email" 
-        "footer__contact_phone"
-        "footer__title_wait"
-        "footer__contact_address"
-        "footer__contact_city";
+    @include media-mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "footer__title_questions "
+            "footer__contact_email"
+            "footer__contact_phone"
+            "footer__title_wait"
+            "footer__contact_address"
+            "footer__contact_city";
         text-align: center;
         min-height: 630px;
-}
+
+        @include media-mobilesmall {
+            min-height: 520px;
+        }
+    }
 }
 
 .footer__title_questions {
@@ -106,6 +118,10 @@
     @include media-mobile {
         font-size: 2.2rem;
     }
+
+    @include media-mobilesmall {
+        font-size: 1.6rem;
+    }
 }
 
 .footer__contact {
@@ -114,8 +130,13 @@
     color: $color-primary;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+
     @include media-mobile {
         font-size: 1.4rem;
+    }
+
+    @include media-mobilesmall {
+        font-size: 1.1rem;
     }
 }
 

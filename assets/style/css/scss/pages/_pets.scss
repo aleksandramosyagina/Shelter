@@ -22,6 +22,10 @@ html {
     margin-top: 1.8em;
     font-size: 1.8em;
 }
+@include media-mobilesmall {
+    margin-top: 35px;
+    font-size: 1.4em;
+}
 }
 
 .main__friends_container_pets {
@@ -40,8 +44,8 @@ html {
         max-width: 640px;
 }
 
-@include media-mobile {
-    min-height: 1600px;
+@include media-mobilesmall {
+    min-height: 1380px;
 }
 }
 
@@ -52,6 +56,10 @@ html {
 
     @include media-mobile {
         margin-top: 26%;
+    }
+
+    @include media-mobile {
+        margin-top: 10%;
     }
 }
 
@@ -75,6 +83,11 @@ html {
     @include media-tablet {
         margin: 4% auto 11%;
 }
+@include media-mobilesmall {
+    min-width: 320px;
+    text-align: center;
+    margin: 7% auto 11%;
+}
 }
 
 .main__friends_card_button {
@@ -92,4 +105,9 @@ html {
 .main__friends_arrow {
     margin-left: 10px;
     margin-right: 10px;
+
+    @include media-mobilesmall {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 }
