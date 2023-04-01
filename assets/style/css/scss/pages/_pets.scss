@@ -14,6 +14,14 @@ html {
     line-height: 1.3em;
     letter-spacing: 0.04em;
     margin-top: 2.8em;
+
+    @include media-tablet {
+        margin-top: 2.4em;
+}
+@include media-mobile {
+    margin-top: 1.8em;
+    font-size: 1.8em;
+}
 }
 
 .main__friends_container_pets {
@@ -23,16 +31,50 @@ html {
     height: 150%;
     margin-top: 2%;
     max-width: 1240px;
+
+    @include media-laptop {
+        max-width: 900px;
+    }
+
+    @include media-tablet {
+        max-width: 640px;
+}
+
+@include media-mobile {
+    min-height: 1600px;
+}
 }
 
 .main__friends_name {
     margin-top: 12%;
     font-size: 1.1em;
     letter-spacing: 0.07em;
+
+    @include media-mobile {
+        margin-top: 26%;
+    }
 }
 
+.main__friends_card_hide {
+    @include media-tablet {
+        display: none;
+}
+@include media-mobile {
+    display: none;
+}
+}
+
+.main__friends_card_hide-mobile {
+    @include media-mobile {
+        display: none;
+    }
+}
 .main__buttons_container {
     margin: 4% auto 8%;
+
+    @include media-tablet {
+        margin: 4% auto 11%;
+}
 }
 
 .main__friends_card_button {
