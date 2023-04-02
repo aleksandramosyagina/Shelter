@@ -343,8 +343,11 @@ template {
 
 .header {
   max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav {
@@ -380,7 +383,7 @@ template {
   text-decoration: none;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .nav .nav__menu:hover {
@@ -398,7 +401,7 @@ template {
   text-decoration: none;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 @media (max-width: 768px) {
@@ -433,7 +436,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 46vw;
+  width: 443px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -460,6 +463,7 @@ template {
 
 .nav .nav__logo {
   margin-left: -2%;
+  margin-top: 20px;
 }
 
 .nav .nav__logo_title {
@@ -776,57 +780,74 @@ body {
   color: #545454;
 }
 
-.main__banner {
+.main__not-only {
   background-image: url("../../../img/start-screen-gradient-background.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  position: relative;
+  background-repeat: repeat;
+  min-height: 908px;
 }
 
-.main__img_puppy {
-  height: 80%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
 }
 
-.main__banner_info {
-  width: 35vw;
-  margin-left: 5%;
-  position: absolute;
-  top: 35%;
+.not-only-row {
+  width: 100%;
+  height: 908px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__banner_title {
-  color: #ffffff;
+.not-only-body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 39%;
+          flex: 0 1 39%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 82px;
+}
+
+.not-only-title {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 44px;
+  line-height: 57px;
+  color: #ffffff;
+  margin-bottom: 42px;
 }
 
-.main__banner_text {
-  color: #f6f6f6;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.5em;
-  margin-bottom: 1.7em;
-}
-
-.main__banner_button {
-  background-color: #f1cdb3;
-  color: #292929;
-  border-radius: 100px;
-  border: none;
-  width: 17vw;
-  height: 7vh;
-}
-
-.main__banner_button:hover {
-  background-color: #fddcc4;
-  cursor: pointer;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+.not-only-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 61%;
+          flex: 0 1 61%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 42px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .main__about {
@@ -899,7 +920,8 @@ body {
 
 .main__friends_title {
   text-align: center;
-  margin: 5%;
+  margin: 9% 0 5%;
+  letter-spacing: 2px;
 }
 
 .main__friends_card {
@@ -987,17 +1009,13 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.main__friends_form {
-  width: 15%;
-}
-
 .main__friends_button {
   background-color: #f1cdb3;
   border: none;
   border-radius: 30px;
-  width: 100%;
-  height: 8vh;
-  margin: 5%;
+  width: 261px;
+  height: 52px;
+  margin: 33px 0 100px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #292929;
   font-size: 0.9rem;
@@ -1025,7 +1043,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 80vh;
+  min-height: 611px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 2px;
 }
 
 .main__help_container {
@@ -1060,10 +1080,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-width: 20%;
+  font-size: 20px;
 }
 
 .main__donation {
-  min-height: 50vh;
+  min-height: 462px;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1078,8 +1099,7 @@ body {
 
 .main__donation_img {
   width: 35vw;
-  margin-right: 7%;
-  margin: 7%;
+  margin: 6% 4% 8%;
 }
 
 .main__donation_bank-info {

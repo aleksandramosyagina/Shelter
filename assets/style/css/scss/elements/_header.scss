@@ -1,7 +1,10 @@
 .header {
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav {
@@ -25,7 +28,7 @@
         color: $color-dark-s;
         text-decoration: none;
         transition: all 0.4s ease-in-out;
-        font-size: 20px;
+        font-size: 15px;
 
         &:hover {
             color: $color-light-s;
@@ -40,7 +43,7 @@
         color: $color-dark-l;
         text-decoration: none;
         transition: all 0.4s ease-in-out;
-        font-size: 20px;
+        font-size: 15px;
 
         @include media-tablet {
             font-size: 14px;
@@ -69,7 +72,7 @@
 
     .nav__menu_container {
         display: flex;
-        width: 46vw;
+        width: 443px;
         justify-content: space-between;
         margin-right: -2%;
 
@@ -88,6 +91,7 @@
 
     .nav__logo {
         margin-left: -2%;
+        margin-top: 20px;
     }
 
     .nav__logo_title {

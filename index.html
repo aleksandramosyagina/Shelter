@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <div class="main__container">
+
+<!-- 
     <main class="main">
         <section class="main__section main__banner">
             <nav class="nav">
@@ -36,7 +37,49 @@
                 <form class="main__friends_form" action="pets.html"><button class="main__banner_button">Make a
                         friend</button></form>
             </div>
-        </section>
+        </section> -->
+
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="index.html">
+                <h2 class="nav__logo_title">Cozy House</h2>
+                <p class="nav__logo_subtitle">Shelter for pets in Boston</p>
+            </a>
+        </div>
+        <div class="nav__menu_container">
+            <a class="nav__menu nav__menu_active" href="#about">About the shelter</a>
+            <a class="nav__menu" href="pets.html">Our pets</a>
+            <a class="nav__menu" href="#help">Help the shelter</a>
+            <a class="nav__menu" href="#contacts">Contacts</a>
+        </div>
+    </nav>
+</header>
+<section class="main__section main__not-only">
+    <div class="container">
+        <div class="not-only-row">
+            <div class="not-only-body">
+                <h1 class="not-only-title">
+                    Not only people <br> need a house
+                </h1>
+                <p class="not-only-text">
+                    We offer to give a chance to a little and nice puppy with an extremely wide
+                    and open heart. He or she will love you more than anybody else in the world, you will see!
+                </p>
+                <a href="#pets" class="not-only-btn">Make a friend</a>
+            </div>
+            <div class="not-only-img">
+            <img src="assets/img/start-screen-puppy.png" alt="puppy">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
         <section class="main__section main__about" id="about">
             <img src="assets/img/about-pets.png" class="main__img_pets" alt="pets">
             <div class="main__about_info">
@@ -130,21 +173,37 @@
         </section>
     </main>
     <footer class="footer" id="contacts">
-        <div class="footer__container">
-            <h2 class="footer__title footer__title_questions">For questions <br>and suggestions</h2>
-            <h2 class="footer__title footer__title_wait">We are waiting <br>for your visit</h2>
-            <div class="footer__contact footer__contact_email"><img src="assets/img/icon-email.svg" class="footer__icon"
-                    alt="icon">email@shelter.com</div>
-            <div class="footer__contact footer__contact_address"><img src="assets/img/icon-marker.svg"
-                    class="footer__icon_marker" alt="icon">1 Central Street, Boston <br>(entrance from the store)</div>
-            <div class="footer__contact footer__contact_phone"><img src="assets/img/icon-phone.svg" class="footer__icon"
-                    alt="icon">+13 674 567 75 54</div>
-            <div class="footer__contact footer__contact_city"><img src="assets/img/icon-marker.svg"
-                    class="footer__icon_marker" alt="icon">18 South Park, London </div>
-            <img src="assets/img/footer-puppy.png" class="footer__img" alt="puppy">
+        <div class="footer__container_wrap">
+            <div class="footer__container">
+                <div class="footer__contacts">
+                    <h3 class="footer__title ">For questions <br>and suggestions</h3>
+                    <div class="footer__contact"><img src="assets/img/icon-email.svg"
+                            class="footer__icon" alt="icon">
+                            <p class="textmail">
+                                <a href="mailto:email@shelter.com" target="blank">
+                            email@shelter.com
+                        </a>
+                        </p>
+                        </div>
+                    <div class="footer__contact"><img src="assets/img/icon-phone.svg"
+                            class="footer__icon" alt="icon">+13 674 567 75 54</div>
+                </div>
+                <div class="footer__contacts">
+                    <h3 class="footer__title">We are waiting <br>for your visit</h3>
+                    <div class="footer__contact footer__contact_location"><img src="assets/img/icon-marker.svg"
+                            class="footer__icon_marker" alt="icon">1 Central Street, Boston <br>(entrance from the
+                        store)</div>
+                    <div class="footer__contact footer__contact_location"><img src="assets/img/icon-marker.svg"
+                            class="footer__icon_marker" alt="icon">18 South Park, London </div>
+                </div>
+                <div class="footer__img">
+                    <img src="assets/img/footer-puppy.png" class="footer__img" alt="puppy">
+                </div>
+            </div>
         </div>
     </footer>
-</div>
+
+
     <script src="index.js"></script>
 </body>
 

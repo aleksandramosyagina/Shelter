@@ -7,57 +7,105 @@ body {
     color: $color-dark-l;
 }
 
-.main__banner {
+.main__not-only {
     background-image: url("../../../img/start-screen-gradient-background.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    position: relative;
+    background-repeat: repeat;
+    min-height: 908px;
 }
 
-.main__img_puppy {
-    height: 80%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
 }
 
-.main__banner_info {
-    width: 35vw;
-    margin-left: 5%;
-    position: absolute;
-    top: 35%;
+.not-only-row {
+    width: 100%;
+    height: 908px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.main__banner_title {
-    color: $color-light-xl;
+.not-only-body {
+    flex: 0 1 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 82px;
+}
+
+.not-only-title {
     font-family: $title-font;
+    font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 44px;
+    line-height: 57px;
+    color: $color-light-xl;
+    margin-bottom: 42px;
 }
 
-.main__banner_text {
-    color: $color-light-l;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5em;
-    margin-bottom: 1.7em;
+.not-only-img {
+    flex: 0 1 61%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 42px;
+    align-self: flex-end;
 }
 
-.main__banner_button {
-    background-color: $color-primary;
-    color: $color-dark-3xl;
-    border-radius: 100px;
-    border: none;
-    width: 17vw;
-    height: 7vh;
+// .main__banner {
+//     background-image: url("../../../img/start-screen-gradient-background.jpg");
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+//     min-height: 908px;
+//     position: relative;
+// }
 
-    &:hover {
-        background-color: $color-primary-light;
-        cursor: pointer;
-        transition: all 0.4s ease-in-out;
-    }
-}
+// .main__img_puppy {
+//     height: 80%;
+//     position: absolute;
+//     left: 43%;
+//     bottom: 0;
+// }
+
+// .main__banner_info {
+//     width: 35vw;
+//     margin-left: 3%;
+//     position: absolute;
+//     top: 35%;
+// }
+
+// .main__banner_title {
+//     color: $color-light-xl;
+//     font-family: $title-font;
+//     font-weight: 400;
+//     font-size: 2.5rem;
+//     line-height: 52.2px;
+// }
+
+// .main__banner_text {
+//     color: $color-light-l;
+//     font-weight: 400;
+//     font-size: 0.9rem;
+//     line-height: 1.5em;
+//     margin: 53px 0;
+// }
+
+// .main__banner_button {
+//     background-color: $color-primary;
+//     color: $color-dark-3xl;
+//     border-radius: 100px;
+//     border: none;
+//     width: 17vw;
+//     height: 7vh;
+
+//     &:hover {
+//         background-color: $color-primary-light;
+//         cursor: pointer;
+//         transition: all 0.4s ease-in-out;
+//     }
+// }
 
 .main__about {
     min-height: 70vh;
@@ -105,7 +153,8 @@ body {
 
 .main__friends_title {
     text-align: center;
-    margin: 5%;
+    margin: 9% 0 5%;
+    letter-spacing: 2px;
 }
 
 .main__friends_card {
@@ -175,16 +224,13 @@ body {
     }
 }
 
-.main__friends_form {
-    width: 15%;
-}
 .main__friends_button {
     background-color: $color-primary;
     border: none;
     border-radius: 30px;
-    width: 100%;
-    height: 8vh;
-    margin: 5%;
+    width: 261px;
+    height: 52px;
+    margin: 33px 0 100px;
     font-family: $title-font;
     color: $color-dark-3xl;
     font-size: 0.9rem;
@@ -200,7 +246,9 @@ body {
 .main__help {
     @include flex();
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 611px;
+    font-family: $title-font;
+    letter-spacing: 2px;
 }
 
 .main__help_container {
@@ -221,18 +269,19 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 20%;
+    font-size: 20px;
 }
 
 .main__donation {
-    min-height: 50vh;
+    min-height: 462px;
     background-color: $color-light-l;
     @include flex();
 }
 
 .main__donation_img {
     width: 35vw;
-    margin-right: 7%;
-    margin: 7%;
+    margin: 6% 4% 8%;
+    
 }
 
 .main__donation_bank-info {
