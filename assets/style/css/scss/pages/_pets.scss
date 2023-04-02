@@ -42,6 +42,7 @@ html {
 
     @include media-tablet {
         max-width: 640px;
+        min-height: 1650px;
 }
 
 @include media-mobilesmall {

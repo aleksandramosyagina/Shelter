@@ -12,7 +12,6 @@
     font-weight: 400;
     height: 60px;
     max-width: 1280px;
-    font-size: 0.9rem;
 
     @include media-tablet {
         padding: 4% 5%;
@@ -26,16 +25,26 @@
         color: $color-dark-s;
         text-decoration: none;
         transition: all 0.4s ease-in-out;
+        font-size: 20px;
 
         &:hover {
             color: $color-light-s;
         }
+
+        @include media-tablet {
+            font-size: 14px;
+    }
     }
 
     .nav__menu_dark {
         color: $color-dark-l;
         text-decoration: none;
         transition: all 0.4s ease-in-out;
+        font-size: 20px;
+
+        @include media-tablet {
+            font-size: 14px;
+    }
 
         &:hover {
             color: $color-dark-xl;
@@ -60,7 +69,7 @@
 
     .nav__menu_container {
         display: flex;
-        width: 33vw;
+        width: 46vw;
         justify-content: space-between;
         margin-right: -2%;
 
